@@ -1,0 +1,9 @@
+---
+- name: install vim
+  hosts: workers
+  become: true
+  tasks:
+   - name: Software installation
+     package:
+      name: vim
+      state: absent
